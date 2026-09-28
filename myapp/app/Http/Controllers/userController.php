@@ -13,9 +13,11 @@ class userController extends Controller
         // return view('welcome');\
         // return $id;
 
-        return view('displayUser', 
-        ["id" => $id, "name"=> "Fahad", 
-        "hobbies"=>['Coding', 'Cricket', 
-        'Singing', 'Reading'] ]);
+        return view('displayUser', [
+            "id" => $id, 
+            "name"=> "Fahad", 
+            "hobbies"=>['Coding', 'Cricket', 'Singing', 'Reading'],
+            "age" => 18
+        ]);
     }
 }

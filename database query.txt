@@ -1,0 +1,11 @@
+CREATE DATABASE laravelapp_db;
+CREATE TABLE students(
+	uid INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255),
+    age INT,
+    phone VARCHAR(255),
+    email VARCHAR(255)
+);
+
+INSERT INTO students(username, age, phone, email) 
+VALUES('Abdul Rehman', 20, '03121234567', 'ar@gmail.com' );

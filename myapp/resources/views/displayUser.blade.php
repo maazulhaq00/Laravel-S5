@@ -18,6 +18,23 @@
     
     @endfor
 
+    @foreach($hobbies as $hobby)
+        <p>{{ $hobby }}</p>
+    @endforeach
+
+    @if ($age > 18)
+        <p>You are eligible to vote</p>
+    @elseif ($age < 18)
+        <p>You are not eligible to vote</p>    
+    @else
+        <p>You just turn 18, welcome new voter...</p>
+    @endif
+
+
+    
+
+
+
 
 
 

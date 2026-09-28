@@ -18,7 +18,6 @@ Route::get('/hello/{name}', function ($name) {
 });
 
 
-Route::get("/displayUser/{id}", 
-[UserController::class, 'displayUser']);
+Route::get("/displayUser/{id}", [UserController::class, 'displayUser']);
 
 // php artisan make:controller userController
