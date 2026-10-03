@@ -8,6 +8,9 @@
 
 </head>
 <body>
+    
+    <x-nav-bar />
+
     <div class="container mt-4">
     <h1>Students</h1>
 
@@ -19,6 +22,7 @@
         <th scope="col">Age</th>
         <th scope="col">Phone</th>
         <th scope="col">Email</th>
+        <th scope="col">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -30,6 +34,10 @@
                 <td>{{ $student['age'] }}</td>
                 <td>{{ $student['phone'] }}</td>
                 <td>{{ $student['email'] }}</td>
+                <td>
+                    <a href="{{ '/edit/' . $student['uid'] }}" >Edit</a>
+                    <a href="{{ '/delete/' . $student['uid'] }}" >Delete</a>
+                </td>
             </tr>
         @endforeach
 

@@ -8,6 +8,8 @@ class Student extends Model
 {
     //
 
+    protected $primaryKey = 'uid';
+
     protected $fillable = [
         'username',
         'age',
